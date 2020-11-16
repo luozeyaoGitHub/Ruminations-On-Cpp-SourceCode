@@ -1,0 +1,338 @@
+for i in  chap6 chap7 chap9 chap10 chap12 chap13 chap14 chap15 chap16 chap19 chap24 chap25 chap27 chap28 chap8; \
+do \
+	cd $i  ; \
+	pwd ; \
+	make test ; \
+	cd .. ; \
+done 
+/home/objects/bem/book/rumin/latest/code/chap6
+CC -x   -target sun4 -c  Handle.c
+/home/objects/bem/book/rumin/latest/code/chap7
+CC -x   -target sun4 -c  Handle.c
+CC -x   -target sun4 -c  Handle2.c
+/home/objects/bem/book/rumin/latest/code/chap9
+CC -x   -target sun4 -c  main1.c
+CC -x   -target sun4 -c  Picture.c
+CC -x main1.o Picture.o -omain1
+CC -x   -target sun4 -c  main2.c
+CC -x main2.o Picture.o -omain2
+CC -x   -target sun4 -c  main3.c
+CC -x main3.o Picture.o -omain3
+main1
+Paris 
+in the
+Spring
+
+main2
+Paris 
+in the
+Spring
+
++------+
+|Paris |
+|in the|
+|Spring|
++------+
+
+Paris +------+
+in the|Paris |
+Spring|in the|
+      |Spring|
+      +------+
+
++------+      
+|Paris |      
+|in the|      
+|Spring|      
++------+      
+Paris +------+
+in the|Paris |
+Spring|in the|
+      |Spring|
+      +------+
+
++--------------+
+|+------+      |
+||Paris |      |
+||in the|      |
+||Spring|      |
+|+------+      |
+|Paris +------+|
+|in the|Paris ||
+|Spring|in the||
+|      |Spring||
+|      +------+|
++--------------+
+
+main3
+Paris 
+in the
+Spring
+
+Paris 
+in the
+Spring
+
+/home/objects/bem/book/rumin/latest/code/chap10
+CC -x   -target sun4 -c  main1.c
+CC -x   -target sun4 -c  Picture.c
+CC -x main1.o Picture.o -omain1
+CC -x   -target sun4 -c  main2.c
+CC -x main2.o Picture.o -omain2
+CC -x   -target sun4 -c  main3.c
+CC -x main3.o Picture.o -omain3
+main1
+Paris
+in the
+Spring
+
+main2
+Paris
+in the
+Spring
+
++------+
+|Paris |
+|in the|
+|Spring|
++------+
+
++--------+
+|+------+|
+||Paris ||
+||in the||
+||Spring||
+|+------+|
++--------+
+
+Paris +------+
+in the|Paris |
+Spring|in the|
+      |Spring|
+      +------+
+
++------+
+|Paris |
+|in the|
+|Spring|
++------+
+Paris +------+
+in the|Paris |
+Spring|in the|
+      |Spring|
+      +------+
+
++--------------+
+|+------+      |
+||Paris |      |
+||in the|      |
+||Spring|      |
+|+------+      |
+|Paris +------+|
+|in the|Paris ||
+|Spring|in the||
+|      |Spring||
+|      +------+|
++--------------+
+
+main3
+Paris
+in the
+Spring
+
+Paris
+in the
+Spring
+
+/home/objects/bem/book/rumin/latest/code/chap12
+CC -x   -target sun4 -c  main.c
+CC -x main.o
+a.out
+0 1 2 3 4 5 6 7 8 9 
+0 1 2 3 4 5 6 7 8 9 
+/home/objects/bem/book/rumin/latest/code/chap13
+CC -x   -target sun4 -c  main.c
+CC -x main.o
+a.out
+0 1 2 3 42 5 6 7 8 9 
+0 1 2 3 42 5 6 7 8 9 
+/home/objects/bem/book/rumin/latest/code/chap14
+CC -x   -target sun4 -c  main.c
+CC -x main.o -omain1
+C++ prelinker: operator +(const Pointer<int> &, int) assigned to file main.o
+C++ prelinker: operator !=(const Ptr_to_const<int> &, const Ptr_to_const<int> &) assigned to file main.o
+C++ prelinker: executing: /usr/v/bin/CC -c -x -target sun4 main.c
+C++ prelinker: operator ==(const Ptr_to_const<int> &, const Ptr_to_const<int> &) assigned to file main.o
+C++ prelinker: executing: /usr/v/bin/CC -c -x -target sun4 main.c
+CC -x   -target sun4 -c  main2.c
+CC -x main2.o -omain2
+C++ prelinker: operator +(Array<int> &, int) assigned to file main2.o
+C++ prelinker: operator !=(const Ptr_to_const<int> &, const Ptr_to_const<int> &) assigned to file main2.o
+C++ prelinker: executing: /usr/v/bin/CC -c -x -target sun4 main2.c
+C++ prelinker: operator ==(const Ptr_to_const<int> &, const Ptr_to_const<int> &) assigned to file main2.o
+C++ prelinker: executing: /usr/v/bin/CC -c -x -target sun4 main2.c
+main1
+0000000000
+0000000000
+main2
+0123456789
+0123456789
+/home/objects/bem/book/rumin/latest/code/chap15
+CC -x   -target sun4 -c  main.c
+CC -x main.o
+C++ prelinker: sort(const Seq<int> &) assigned to file main.o
+C++ prelinker: Seq<int>::insert(const int &) assigned to file main.o
+C++ prelinker: Seq<int>::hd() const  assigned to file main.o
+C++ prelinker: Seq<int>::destroy(Seq_item<int> *) assigned to file main.o
+C++ prelinker: Seq<int>::operator ++(int) assigned to file main.o
+C++ prelinker: executing: /usr/v/bin/CC -c -x -target sun4 main.c
+C++ prelinker: Seq<int>::tl() const  assigned to file main.o
+C++ prelinker: split(Seq<int>, Seq<int> &, Seq<int> &) assigned to file main.o
+C++ prelinker: merge(const Seq<int> &, const Seq<int> &) assigned to file main.o
+C++ prelinker: Seq_item<int>::Seq_item<int>(const int &, Seq_item<int> *) assigned to file main.o
+C++ prelinker: executing: /usr/v/bin/CC -c -x -target sun4 main.c
+C++ prelinker: cons(const int &, const Seq<int> &) assigned to file main.o
+C++ prelinker: Seq<int>::operator ++() assigned to file main.o
+C++ prelinker: executing: /usr/v/bin/CC -c -x -target sun4 main.c
+a.out
+0123456789
+0123456789
+/home/objects/bem/book/rumin/latest/code/chap16
+CC -x   -target sun4 -c  main1.c
+CC -x main1.o -omain1
+CC -x   -target sun4 -c  main2.c
+CC -x main2.o -omain2
+CC -x   -target sun4 -c  main3.c
+CC -x main3.o -omain3
+CC -x   -target sun4 -c  main4.c
+CC -x main4.o -omain4
+C++ prelinker: sum(Iterator<double>) assigned to file main4.o
+C++ prelinker: executing: /usr/v/bin/CC -c -x -target sun4 main4.c
+CC -x   -target sun4 -c  main5.c
+CC -x main5.o -omain5
+C++ prelinker: sum2(int &, Iterator<int>) assigned to file main5.o
+C++ prelinker: executing: /usr/v/bin/CC -c -x -target sun4 main5.c
+CC -x   -target sun4 -c  main6.c
+CC -x main6.o -omain6
+C++ prelinker: sum(int *, int) assigned to file main6.o
+C++ prelinker: executing: /usr/v/bin/CC -c -x -target sun4 main6.c
+C++ prelinker: sum2(int &, Iterator<int>) assigned to file main6.o
+C++ prelinker: executing: /usr/v/bin/CC -c -x -target sun4 main6.c
+CC -x   -target sun4 -c  main_Reader.c
+CC -x main_Reader.o -omainR
+C++ prelinker: sum2(double &, Reader<double>) assigned to file main_Reader.o
+C++ prelinker: executing: /usr/v/bin/CC -c -x -target sun4 main_Reader.c
+main1
+45
+45
+main2
+45
+45
+main3
+45
+45
+main4
+139.5
+139.5
+main5
+45
+45
+main6
+45
+45
+mainR <input_file
+Enter numbers:
+45
+45
+/home/objects/bem/book/rumin/latest/code/chap19
+CC -x   -target sun4 -c  main1.c
+CC -x main1.o -omain1
+C++ prelinker: copy(char *, char *, char *) assigned to file main1.o
+C++ prelinker: executing: /usr/v/bin/CC -c -x -target sun4 main1.c
+CC -x   -target sun4 -c  main2.c
+CC -x main2.o -omain2
+C++ prelinker: copy(Constant_iterator, Constant_iterator, int *) assigned to file main2.o
+C++ prelinker: executing: /usr/v/bin/CC -c -x -target sun4 main2.c
+CC -x   -target sun4 -c  main3.c
+CC -x main3.o -omain3
+C++ prelinker: copy(Constant_iterator, Constant_iterator, ostream_iterator<int>) assigned to file main3.o
+C++ prelinker: executing: /usr/v/bin/CC -c -x -target sun4 main3.c
+CC -x   -target sun4 -c  main4.c
+CC -x main4.o -omain4
+C++ prelinker: copy(istream_iterator<int>, istream_iterator<int>, ostream_iterator<int>) assigned to file main4.o
+C++ prelinker: executing: /usr/v/bin/CC -c -x -target sun4 main4.c
+C++ prelinker: operator !=(istream_iterator<int> &, istream_iterator<int> &) assigned to file main4.o
+C++ prelinker: executing: /usr/v/bin/CC -c -x -target sun4 main4.c
+C++ prelinker: operator ==(istream_iterator<int> &, istream_iterator<int> &) assigned to file main4.o
+C++ prelinker: executing: /usr/v/bin/CC -c -x -target sun4 main4.c
+main1
+Hello world
+Hello world
+main2
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+main3
+42 42 42 42 42 42 42 42 42 42 
+42 42 42 42 42 42 42 42 42 42
+main4 <input_file
+10 20 30 40 
+10 20 30 40
+/home/objects/bem/book/rumin/latest/code/chap24
+CC -x   -target sun4 -c  main.c
+CC -x   -target sun4 -c  dirlib.c
+CC -x main.o dirlib.o 
+a.out
+.
+..
+dirlib.o
+main.o
+main.c
+a.out
+dirlib.h
+dirlib.c
+Makefile
+/home/objects/bem/book/rumin/latest/code/chap25
+CC -x   -target sun4 -c  main.c
+CC -x   -target sun4 -c  String.c
+CC -x main.o String.o
+a.out
+hello world
+hello world
+/home/objects/bem/book/rumin/latest/code/chap27
+CC -x   -target sun4 -c  main.c
+CC -x main.o
+C++ prelinker: Array<Obj_trace>::init(Obj_trace *, int) assigned to file main.o
+C++ prelinker: executing: /usr/v/bin/CC -c -x -target sun4 main.c
+a.out | sort
+Object 1 constructed
+Object 1 destroyed
+Object 2 constructed
+Object 2 destroyed
+Object 3 constructed
+Object 3 destroyed
+Object 4 constructed
+Object 4 destroyed
+Object 5 constructed
+Object 5 destroyed
+Object 6 constructed
+Object 6 destroyed
+Object 7 constructed
+Object 7 destroyed
+Object 8 constructed
+Object 8 destroyed
+Object 9 constructed
+Object 9 destroyed
+/home/objects/bem/book/rumin/latest/code/chap28
+CC -x   -target sun4 -c  main.c
+CC -x   -target sun4 -c  Cluster.c
+CC -x main.o Cluster.o
+a.out
+/home/objects/bem/book/rumin/latest/code/chap8
+CC -x   -target sun4 -c  main.c
+CC -x   -target sun4 -c  Expr.c
+CC -x main.o Expr.o ../chap25/String.o
+a.out
+((-5)*(3+4)) = -35
+((-5)*(3+4)) = -35
+(((-5)*(3+4))*((-5)*(3+4))) = 1225
+(((-5)*(3+4))*((-5)*(3+4))) = 1225

@@ -1,0 +1,30 @@
+#note chap8 depends on String.o from chap25 so must be
+#made after chap25
+OBJS=chap6 chap7 chap9 chap10 chap12 chap13 chap14 chap15\
+	chap16 chap19 chap24 chap25 chap27 chap28 chap8
+
+test:
+	for i in  $(OBJS); \
+	do \
+		cd $$i  ; \
+		pwd ; \
+		make test ; \
+		cd .. ; \
+	done 
+
+print:
+	for i in $(OBJS); \
+	do \
+		cd $$i ; \
+		pwd ; \
+		pr *.[ch] |lpr ; \
+		cd .. ; \
+	done
+
+clobber: 
+	for i in $(OBJS); \
+	do \
+		cd $$i ; \
+		make clobber ; \
+		cd .. ; \
+	done

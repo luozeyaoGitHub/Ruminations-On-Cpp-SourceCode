@@ -1,0 +1,68 @@
+Copyright (C) 1997 AT&T Corporation.  All rights reserved.  Permission
+is granted for individuals to use this material for educational
+purposes in connection with the book `Ruminations on C++'
+(Addison-Wesley 1997, ISBN 0-201-42339-1).
+
+
+The subdirectories of this directory contain code examples from the
+corresponding chapters in `Ruminations on C++.'  The code was compiled
+on a Sun Microsystems Sparcstation running SunOS 4.1.1 using the
+Edison Design Group's Release 4.0, June 15, 1995, version 2.28 front end.
+
+The code is intended to be easily portable to other environments.
+
+
+The file `mk.all' in this directory contains a master makefile.  On
+our system,
+
+	make -f mk.all test
+
+will go into each subdirectory, compile the relevant source files, and
+run test programs as appropriate.  The file `nohup.out' in this
+directory contains the results of running this command on our system.
+That is, it shows the results of building and executing all the test
+programs on our machine.
+
+Similarly,
+	
+	make -f mk.all clobber
+
+will clean all the associated subdirectories and
+
+	make -f mk.all print
+
+will use the `pr' and `lpr' commands to format and print the 
+.c and .h files.
+
+Each subdirectory contains a Makefile which is intended to be simple
+and should be portable to many environments.
+
+The compiler we used uses the -x option to enable exception handling.
+Hence, our makefiles compile all code using
+
+	CC -x
+
+This compiler also generates a .ii file which contains recompilation
+information needed to for template instantiation.  The `clean' targets
+in our makefiles remove these files.
+
+Some of these examples generate no output and are exercises in getting
+the code to build properly, such as those in chap24.  Others, such as
+chap9 and chap10, generate output as described in the related chapter.
+The remaining chapters use a technique we have used in years of
+testing compilers: The program is `self-checking.'  It does some
+calculation, writes the result to the standard output, and then also
+writes the result it expects. This technique allows the programmer
+(or, better still, a program) to easily check for correctness by
+looking for pairs of matching lines.
+
+
+Please let us know if you find any bugs in the code.  Have fun!
+
+
+				Regards,
+
+
+				Andrew Koenig		ark@research.att.com
+
+				Barbara Moo		bmoo@mail.att.net
